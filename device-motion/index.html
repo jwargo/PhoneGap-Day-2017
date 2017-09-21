@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Example 2.2</title>
+  <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" id="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <link rel="stylesheet" type="text/css" href="css/topcoat-mobile-light.min.css">
+  <script src="cordova.js"></script>
+  <script src="index.js"></script>
+</head>
+
+<body onload="onBodyLoad()">
+  <div class="topcoat-navigation-bar">
+    <div class="topcoat-navigation-bar__item center full">
+      <h1 class="topcoat-navigation-bar__title">Example 2.2</h1>
+    </div>
+  </div>
+  <p> This is a Cordova application that watches device orientation using the Accelerometer API. Click the "Start" button to
+    enable the watch, "Stop" button to disable the watch.</p>
+  <div class="topcoat-button-bar">
+    <div class="topcoat-button-bar__item">
+      <button class="topcoat-button-bar__button" onclick="startWatch();">
+          Start
+        </button>
+    </div>
+    <div class="topcoat-button-bar__item">
+      <button class="topcoat-button-bar__button" onclick="stopWatch();">
+          Stop
+        </button>
+    </div>
+  </div>
+  <p id="accelInfo">Waiting for Cordova to initialize.</p>
+</body>
+
+</html>
